@@ -25,7 +25,7 @@
     }
     body.zh { font-family: 'Noto Serif SC', 'Cormorant Garamond', Georgia, serif; }
 
-    /* ── NAV ── */
+    /* : NAV : */
     nav {
       position: fixed; top: 0; width: 100%; z-index: 200;
       padding: 1rem 3rem;
@@ -56,7 +56,7 @@
     .lang-btn .lang-flag { font-size: 14px; }
     .nav-right { display: flex; align-items: center; gap: 1rem; }
 
-    /* ── HERO ── */
+    /* : HERO : */
     .hero {
       min-height: 100vh; display: flex; flex-direction: column;
       justify-content: center; align-items: center;
@@ -95,7 +95,7 @@
     body.zh .scroll-hint span { letter-spacing: .1em; text-transform: none; }
     .scroll-line { width: 1px; height: 32px; background: linear-gradient(to bottom, var(--gold-l), transparent); }
 
-    /* ── LAYOUT ── */
+    /* : LAYOUT : */
     section { padding: 7rem 3rem; }
     .inner { max-width: 1100px; margin: 0 auto; }
     .s-label { font-size: 10px; letter-spacing: .48em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 1.2rem; font-weight: 600; font-family: 'Libre Baskerville', serif; }
@@ -113,7 +113,7 @@
     body.zh .btn-solid { letter-spacing: .08em; text-transform: none; }
     .btn-solid:hover { background: var(--ink); border-color: var(--ink); }
 
-    /* ── OFFRES ── */
+    /* : OFFRES : */
     #offres { background: var(--bg2); }
     .offres-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3.5rem; }
     .offre-card { background: var(--bg); border: 1px solid var(--border2); padding: 3rem 2.5rem; display: flex; flex-direction: column; gap: 1.5rem; transition: border-color .25s, box-shadow .25s; }
@@ -130,7 +130,7 @@
     .offre-includes span::before { content: ':'; color: var(--gold-l); flex-shrink: 0; margin-top: .05rem; }
     .offre-illustration { display: flex; justify-content: center; align-items: center; padding: 2rem; background: var(--ink2); margin-top: auto; }
 
-    /* ── GALERIE ── */
+    /* : GALERIE : */
     #galerie { background: var(--bg); }
     .galerie-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1.5rem; }
     .galerie-note { font-size: .95rem; font-style: italic; color: var(--muted); max-width: 300px; line-height: 1.7; border-left: 2px solid var(--border); padding-left: 1rem; }
@@ -152,7 +152,7 @@
     .ph-upload p { font-size: .95rem; color: var(--muted); }
     .ph-upload strong { color: var(--gold); font-weight: 400; }
 
-    /* ── CONFIGURATEUR ── */
+    /* : CONFIGURATEUR : */
     #configurateur { background: var(--bg2); }
     .config-tabs { display: flex; gap: 0; margin-bottom: 3rem; border: 1px solid var(--border2); width: fit-content; }
     .ctab { padding: .85rem 2rem; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; border: none; font-family: inherit; background: transparent; color: var(--muted); transition: background .2s, color .2s; border-right: 1px solid var(--border2); }
@@ -186,7 +186,7 @@
     .pr-v { font-size: .95rem; color: rgba(245,240,230,.78); font-style: italic; }
     body.zh .pr-v { font-style: normal; }
 
-    /* ── PROCESS ── */
+    /* : PROCESS : */
     #process { background: var(--bg); }
     .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-top: 4rem; }
     .step { border-top: 1px solid var(--border); padding-top: 2rem; }
@@ -195,7 +195,7 @@
     .step h3 { font-size: 1.25rem; font-weight: 600; color: var(--ink); margin-bottom: .75rem; }
     .step p { font-size: 1.05rem; color: var(--text2); line-height: 1.9; }
 
-    /* ── CONTACT ── */
+    /* : CONTACT : */
     #contact { background: var(--bg3); text-align: center; }
     .cintro { font-size: 1.1rem; color: var(--text2); line-height: 1.85; margin: 0 auto 3.5rem; max-width: 540px; }
     .cform { max-width: 620px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.75rem; text-align: left; }
@@ -214,7 +214,7 @@
     .form-msg.success { border-color: #5a8a3a; color: #3a6020; background: #f0f7e8; }
     .form-msg.error { border-color: #c04040; color: #802020; background: #fdf0f0; }
 
-    /* ── FOOTER ── */
+    /* : FOOTER : */
     footer { padding: 2.5rem 3rem; border-top: 1px solid var(--border2); background: var(--ink); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
     .foot-logo { font-size: 12px; letter-spacing: .32em; text-transform: uppercase; color: var(--gold-l); font-weight: 600; }
     body.zh .foot-logo { letter-spacing: .08em; text-transform: none; }
@@ -222,7 +222,7 @@
     body.zh .foot-tag { font-style: normal; }
     .foot-copy { font-size: 11px; color: #4A4438; letter-spacing: .1em; }
 
-    /* ── RESPONSIVE ── */
+    /* : RESPONSIVE : */
     @media (max-width: 960px) {
       nav { padding: 1rem 1.5rem; }
       .nav-links { display: none; }
@@ -789,7 +789,7 @@
 </footer>
 
 <script>
-/* ── LANGUE ── */
+/* : LANGUE : */
 let currentLang = 'fr';
 
 function toggleLang() {
@@ -843,7 +843,7 @@ function applyLang(lang) {
   updateSolo();
 }
 
-/* ── DONNÉES CONFIG ── */
+/* : DONNÉES CONFIG : */
 const LIQUIDS = {
   Bourgogne:  ['#4A1020','#6B2030','#4A1020'],
   Bordeaux:   ['#3A0C18','#5A1828','#3A0C18'],
@@ -890,7 +890,7 @@ function getVerreLabel(ver) {
   return v ? v[currentLang] : (currentLang === 'zh' ? '不含酒杯' : 'SANS VERRES');
 }
 
-/* ── ASSEMBLAGE ── */
+/* : ASSEMBLAGE : */
 function updateAssemblage() {
   const m1  = document.getElementById('a-m1').value.trim();
   const m2  = document.getElementById('a-m2').value.trim();
@@ -918,7 +918,7 @@ function updateAssemblage() {
   document.getElementById(id).addEventListener('change', updateAssemblage);
 });
 
-/* ── SOLO ── */
+/* : SOLO : */
 function updateSolo() {
   const m1  = document.getElementById('s-m1').value.trim();
   const alc = document.getElementById('s-alc').value;
@@ -944,7 +944,7 @@ function updateSolo() {
   document.getElementById(id).addEventListener('change', updateSolo);
 });
 
-/* ── ONGLETS ── */
+/* : ONGLETS : */
 function activateTab(which) {
   ['assemblage','solo'].forEach(t => {
     document.getElementById(`tab-${t}`).classList.toggle('active', t === which);
@@ -975,7 +975,7 @@ function prefillContact(prefix, formule) {
 document.getElementById('btn-cmd-asm').addEventListener('click',  () => prefillContact('a', "L'Assemblage : 2 millésimes"));
 document.getElementById('btn-cmd-solo').addEventListener('click', () => prefillContact('s', "Le Solo : 1 millésime"));
 
-/* ── FORMSPREE ── */
+/* : FORMSPREE : */
 const form = document.getElementById('contactForm');
 const btn  = document.getElementById('submitBtn');
 form.addEventListener('submit', async e => {
@@ -989,7 +989,7 @@ form.addEventListener('submit', async e => {
   } catch { document.getElementById('formError').classList.add('visible'); btn.textContent = currentLang === 'zh' ? '提交我的订单 →' : 'Envoyer ma demande →'; btn.disabled=false; }
 });
 
-/* ── NAV ACTIVE ── */
+/* : NAV ACTIVE : */
 document.querySelectorAll('section[id]').forEach(s => {
   new IntersectionObserver(entries => {
     entries.forEach(e => {
